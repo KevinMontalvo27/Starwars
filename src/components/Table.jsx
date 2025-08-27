@@ -1,8 +1,8 @@
 
 import { useEffect } from "react";
-export const Table = ({data}) => {
+export const Table = ({data, selectedCharacter}) => {
 
-    const pageSize = 10;
+    
     const columns = ["Nombre", "Altura", "Peso", "Color de cabello", "Color de piel", "Color de ojos"
     , "Fecha de nacimiento", "Genero", "Planeta de nacimiento", "Mas"];
     
@@ -36,7 +36,7 @@ export const Table = ({data}) => {
                                 <td>{character.birth_year}</td>
                                 <td>{character.gender}</td>
                                 <td>{character.homeworld}</td>
-                                <td><button>Ver Mas</button></td>
+                                <td className="text-2xl">+</td>
                             </tr>
                         ))
                         

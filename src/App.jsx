@@ -10,9 +10,6 @@ function App() {
   const url = `https://swapi.info/api/people`
   const {data, loading, error} = useFetch(url);
 
-  
-  
-
   const allResults = data || [];
   const totalItems = allResults.length;
 
