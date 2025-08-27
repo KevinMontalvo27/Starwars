@@ -1,6 +1,6 @@
 
 import { useEffect } from "react";
-export const Table = ({data, selectedCharacter}) => {
+export const Table = ({data, selectCharacter}) => {
 
     
     const columns = ["Nombre", "Altura", "Peso", "Color de cabello", "Color de piel", "Color de ojos"
@@ -36,7 +36,7 @@ export const Table = ({data, selectedCharacter}) => {
                                 <td className="px-4 py-2">{character.birth_year}</td>
                                 <td className="px-4 py-2">{character.gender}</td>
                                 <td className="px-4 py-2">{character.homeworld}</td>
-                                <td className="text-2xl px-4 py-2 cursor-pointer hover:text-yellow-300" onClick={selectedCharacter}>+</td>
+                                <td className="text-2xl px-4 py-2 cursor-pointer hover:text-yellow-300" onClick={() => selectCharacter(character)}>+</td>
                             </tr>
                         ))
                         

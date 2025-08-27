@@ -18,7 +18,7 @@ export const useFetch = (url) => {
                 const resolvedData = await changeData(result)
                 setData(resolvedData);
 
-                console.log("Datos transformados", resolvedData);
+                //console.log("Datos transformados", resolvedData);
             } catch(err){
                 setError(err.message);
             } finally{
