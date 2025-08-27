@@ -1,12 +1,24 @@
-# React + Vite
+# Star Wars
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web que muestra personajes del universo de Star Wars utilizando la [SWAPI](https://swapi.info/).  
+Incluye búsqueda, paginación y un modal con detalles de cada personaje.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## Expanding the ESLint configuration
+-  **Listado de personajes** con paginación (10 por página).
+-  **Búsqueda** de personajes por nombre (presionando Enter).
+-  **Modal de detalles** para ver la información de cada personaje.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+##  Instalación y ejecución
+
+### 1. Clonar el repositorio
+```bash
+git https://github.com/KevinMontalvo27/Starwars.git
+cd starWars
+npm install
+npm run dev o npm run dev -- --open
+
