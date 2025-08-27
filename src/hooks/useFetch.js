@@ -1,4 +1,5 @@
 import { useEffect, useState} from 'react';
+import { changeData } from '../services/changeData.service';
 
 export const useFetch = (url) => {
     const [data, setData] = useState(null);
@@ -13,7 +14,11 @@ export const useFetch = (url) => {
                 const response = await fetch (url);
                 if(!response.ok) throw new Error('Error al solicitar los datos');
                 const result = await response.json();
-                setData(result);
+
+                const resolvedData = await changeData(result)
+                setData(resolvedData);
+
+                console.log("Datos transformados", resolvedData);
             } catch(err){
                 setError(err.message);
             } finally{
